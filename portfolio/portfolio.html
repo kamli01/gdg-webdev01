@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamlesh's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(33, 33, 90);
+        color: white;
+        font-family: "Poppins", serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(48, 48, 123);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(131, 174, 174);
+      }
+
+      main hr {
+        border: 0;
+        background: #9f86b4;
+        height: 1px;
+        margin: 109px;
+      }
+
+      nav li {
+        list-style: none;
+        margin: 0 35px;
+      }
+
+      .left {
+        font-size: 1.7rem;
+      }
+
+      .first {
+        display: flex;
+        justify-content: space-around;
+        margin: 55px;
+      }
+
+      .leftsection {
+        width: 30%;
+        font-size: 3rem;
+        margin-top: 30px;
+        margin-left: -85px;
+      }
+
+      .rightsection img {
+        margin: -190px;
+        margin-right: 45px;   
+        margin-top: 10px;
+        justify-self: center;
+        margin-right: -25px; 
+      }
+
+      .red {
+        color: rgb(223, 115, 115);
+      }
+
+      #element {
+        color: rgb(223, 115, 115);
+      }
+
+      .second {
+        max-width: 80vw;
+        margin: auto;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kamlesh's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Qualifications</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first">
+        <div class="leftsection">
+          Hi, my name is <span class="red">Kamlesh</span> And i'm a beginner programmer :D
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="image.png" height="470px" width="450px" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="second">
+        <h1>About me</h1>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Basic C programmer", "Basic .html programmer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
